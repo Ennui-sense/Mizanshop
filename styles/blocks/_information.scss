@@ -81,10 +81,8 @@
         display: inline-block;
         top: 4.2em;
         right: -8.8em;
-        z-index: -1;
-        background: url("../../images/butterfly.svg") center/contain no-repeat,
-                    var(--color-dark);
-        background-blend-mode: lighten;
+        background: url("../../images/butterfly.svg") center/contain no-repeat;
+        mix-blend-mode: lighten;
 
         @include hover {
           top: -10.5em;

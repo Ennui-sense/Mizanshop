@@ -30,11 +30,29 @@ if(ScrollTrigger.isTouch !== 1) {
         }
     })
 
+    gsap.fromTo(".information__title", {x: 100, opacity: 0}, {
+        opacity: 1, x: 0,
+        scrollTrigger: {
+            trigger: ".information__title",
+            start: "-600",
+            end: "0",
+        }
+    })
+
     gsap.fromTo(".footer__title", {y: -100, opacity: 0}, {
         opacity: 1, y: 0,
         scrollTrigger: {
             trigger: ".footer__title",
             start: "-300",
+            end: "0",
+        }
+    })
+
+    gsap.fromTo(".information__name", {x: 100, opacity: 0}, {
+        opacity: 1, x: 0,
+        scrollTrigger: {
+            trigger: ".information__name",
+            start: "-600",
             end: "0",
         }
     })
@@ -63,7 +81,7 @@ if(ScrollTrigger.isTouch !== 1) {
             opacity: 1, x: 0,
             scrollTrigger: {
                 trigger: item,
-                start: "-300",
+                start: "-500",
                 end: "0",
             }
         })

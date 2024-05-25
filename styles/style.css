@@ -328,7 +328,6 @@ a {
 }
 
 .hero {
-  padding-left: 42px;
   padding-top: 90px;
   background: url("../../hero-bg.gif") center/contain no-repeat;
   mix-blend-mode: lighten;
@@ -347,15 +346,6 @@ a {
   display: flex;
   font-weight: 400;
   font-size: 144px;
-}
-.hero__title::before {
-  content: "";
-  display: block;
-  width: 330px;
-  height: 125px;
-  margin-left: -100px;
-  background: url("../../images/bat.svg") center/contain no-repeat, var(--color-dark);
-  background-blend-mode: lighten;
 }
 .hero__description {
   max-width: 162px;
@@ -438,9 +428,8 @@ a {
   display: inline-block;
   top: 4.2em;
   right: -8.8em;
-  z-index: -1;
-  background: url("../../images/butterfly.svg") center/contain no-repeat, var(--color-dark);
-  background-blend-mode: lighten;
+  background: url("../../images/butterfly.svg") center/contain no-repeat;
+  mix-blend-mode: lighten;
 }
 @media (hover: hover) {
   .information__text--2::after:hover {
@@ -519,7 +508,7 @@ a {
   perspective: 1500px;
 }
 .clothes__image-wrapper {
-  width: calc(var(--adaptive-unit) * 4.8);
+  width: calc(var(--adaptive-unit) * 4.5);
   height: calc(var(--adaptive-unit) * 18);
   border-radius: 25px;
   background-color: var(--color-gray);
