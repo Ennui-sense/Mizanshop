@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mizanshop</title>
+
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="test.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#header" class="header__menu-link">Главная</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#information__title" class="header__menu-link">О дизайнере</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#clothes__title" class="header__menu-link">Одежда</a>
+                </li>
+              </ul>
+            </nav>
+            <span class="header__bucket">
+              <a href="#" class="header__bucket-link">Корзина</a>
+            </span>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero section">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__body">
+                <h1 class="hero__title">
+                  Mizan<br>
+                  shop
+                </h1>
+                <div class="hero__description">
+                  <p>Бренд изделий <i>ручной</i> работы</p>
+                </div>
+              </div>
+              <a class="hero__button button" href="#clothes__title">
+                <span class="button__text">К покупкам</span>
+                <svg width="12" height="28" viewBox="0 0 12 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L7 4.37114e-08L5 -4.37114e-08L5 1L7 1ZM6 28L11.7735 18L0.226496 18L6 28ZM5 1L5 19L7 19L7 1L5 1Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="information section">
+          <div class="container">
+            <header class="information__header">
+              <div class="information__name">
+                <span class="information__first-name">Дмитрий</span>
+                <span class="information__last-name">Тюленёв</span>
+              </div>
+              <h2 class="information__title" id="information__title">О дизайнере</h2>
+            </header>
+            <div class="information__body">
+              <div class="information__text information__text--1">
+                <p>Как дизайнер одежды, специализирующийся на готическом стиле я предлагаю уникальное сочетание классических тем с модернизмом и индивидуальностью. Моя работа отражает глубокое понимание традиционной готической эстетики, привнося в неё свежий взгляд и современные тенденции.</p>
+              </div>
+              <img
+                src="images/information/1.svg"
+                alt=""
+                class="information__image information__image--1"
+                width="369" height="506" loading="lazy"
+              >
+              <img
+                src="images/information/2.svg"
+                alt=""
+                class="information__image information__image--2"
+                width="385" height="497" loading="lazy"
+              >
+              <div class="information__text information__text--2">
+                <p>Живя в небольшом провинциальном городе, я черпаю вдохновение из окружающего меня природного ландшафта и богатой исторической ткани города, вводя в свои работы ощущение таинственности и древности, характерное для нашей местности.</p>
+              </div>
+              <div class="information__text information__text--accent information__text--3">
+                <p>Моя цель – не просто создать одежду, а дать возможность каждому чувствовать себя уникальным, отражая свою индивидуальность.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new section">
+          <div class="container">
+            <header class="new__header">
+              <h2 class="new__title title">
+                Новое<br>
+                <i>в продаже</i>
+              </h2>
+              <img
+                src="images/washing-conditions.svg"
+                alt="washing conditions"
+                class="new__conditions"
+                width="450" height="117" loading="lazy"
+              >
+            </header>
+            <div class="new__body">
+              <ul class="new__list">
+                <li class="new__item">
+                  <img
+                    src="images/new/1.svg"
+                    alt=""
+                    class="new__clothes"
+                    width="380" height="458" loading="lazy"
+                  >
+                </li>
+                <li class="new__item">
+                  <img
+                    src="images/new/2.svg"
+                    alt=""
+                    class="new__clothes"
+                    width="452" height="562" loading="lazy"
+                  >
+                </li>
+                <li class="new__item">
+                  <img
+                    src="images/new/3.svg"
+                    alt=""
+                    class="new__clothes"
+                    width="452" height="613" loading="lazy"
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="clothes section">
+          <div class="container">
+            <div class="clothes__inner">
+              <h2 class="clothes__title title" id="clothes__title">
+                Одежда
+              </h2>
+              <div class="clothes__body">
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/1.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/2.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/3.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/4.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/5.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/6.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/7.jpg)" tabindex="1"></div>
+                <div class="clothes__image-wrapper" style="background-image: url(images/clothes/8.jpg)" tabindex="1"></div>
+              </div>
+              <button class="clothes__button button" type="button">
+                <span class="button__text">Перейти к каталогу</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <video src="footer-video.mp4" class="footer__video" autoplay loop muted></video>
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__empty-block"></div>
+            <div class="footer__title">
+              <p>
+                Mizan<br>
+                shop
+              </p>
+            </div>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#header" class="footer__menu-link">Главная</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#information__title" class="footer__menu-link">О дизайнере</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#clothes__title" class="footer__menu-link">Одежда</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

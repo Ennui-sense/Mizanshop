@@ -1,0 +1,19 @@
+@import
+  "normalize",
+  "mixins",
+  "fonts",
+  "variables",
+  "media",
+  "globals",
+  "utils";
+
+@import
+  "blocks/title",
+  "blocks/button",
+  "blocks/section",
+  "blocks/header",
+  "blocks/hero",
+  "blocks/information",
+  "blocks/new",
+  "blocks/clothes",
+  "blocks/footer";

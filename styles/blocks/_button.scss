@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  height: 60px;
+  background-color: var(--color-dark-button);
+  border: 2px solid var(--color-light);
+  border-radius: 7px;
+  padding-inline: 115px;
+  color: var(--color-light);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    path {
+      fill: var(--color-dark)
+    }
+  }
+}

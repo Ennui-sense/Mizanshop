@@ -1,0 +1,52 @@
+.new {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 81px;
+  }
+
+  &__conditions {
+    mix-blend-mode: lighten;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: start;
+    column-gap: 37px;
+  }
+
+  &__item {
+    &:nth-child(1) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 11em;
+        height: 14.5em;
+        right: -1.5em;
+        bottom: -12.5em;
+        z-index: -1;
+        background: url("../../images/spider.svg") center/contain no-repeat,
+                    var(--color-dark);
+        background-blend-mode: lighten;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: -155px;
+    }
+
+    &:nth-child(3) {
+      margin-top: -81px;
+    }
+  }
+
+  &__clothes {
+    border-radius: 21px;
+  }
+
+}

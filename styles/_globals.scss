@@ -1,0 +1,21 @@
+body {
+  font-family: var(--font-family-base);
+  font-weight: 300;
+
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 24px;
+}
+
+h1 {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 144px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

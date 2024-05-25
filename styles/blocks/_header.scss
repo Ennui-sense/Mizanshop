@@ -1,0 +1,97 @@
+.header {
+  padding-top: 42px;
+  text-transform: uppercase;
+
+  &__inner {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    &-item {
+      display: inline-flex;
+      height: 18px;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        translate: -50% 0;
+        height: 1px;
+        width: 0;
+        background-color: var(--color-light);
+        transition-duration: var(--transition-duration);
+      }
+
+      @include hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__bucket {
+    display: inline-flex;
+    height: 19px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 578px;
+      height: 789px;
+      margin-left: -100px;
+      background: url("../../images/scolopendra.svg") center/contain no-repeat,
+                  var(--color-dark);
+      background-blend-mode: lighten;
+      z-index: -1;
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        translate: -50% 0;
+        height: 1px;
+        width: 0;
+        background-color: var(--color-light);
+        transition-duration: var(--transition-duration);
+      }
+
+      @include hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

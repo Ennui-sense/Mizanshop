@@ -1,0 +1,48 @@
+.hero {
+  padding-left: 42px;
+  padding-top: 90px;
+  background: url("../../hero-bg.gif") center/contain no-repeat;
+  mix-blend-mode: lighten;
+  z-index: -2;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    display: flex;
+    font-weight: 400;
+    font-size: 144px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 330px;
+      height: 125px;
+      margin-left: -100px;
+      background: url("../../images/bat.svg") center/contain no-repeat,
+                  var(--color-dark);
+      background-blend-mode: lighten;
+    }
+  }
+
+  &__description {
+    max-width: 162px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+  }
+
+  &__button {
+    align-self: end;
+  }
+}
